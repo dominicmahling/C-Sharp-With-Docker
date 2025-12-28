@@ -1,5 +1,3 @@
-providers = ["dotnet"]
-
 [phases.setup]
 cmds = [
   "curl -fsSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh",
