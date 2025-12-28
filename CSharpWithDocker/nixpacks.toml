@@ -1,6 +1,11 @@
 [phases.setup]
 nixPkgs = ["dotnet-sdk_8"]
 
+[env]
+ASPNETCORE_ENVIRONMENT = "Production"
+ASPNETCORE_URLS = "http://0.0.0.0:8080"
+PORT = "8080"
+
 [phases.build]
 cmds = [
   "dotnet restore",
