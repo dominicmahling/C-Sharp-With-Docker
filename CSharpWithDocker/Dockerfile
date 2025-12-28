@@ -14,6 +14,8 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/runtime:8.0
 WORKDIR /app
 COPY --from=build /app/out .
+ENV ASPNETCORE_URLS=http://0.0.0.0:8080
+EXPOSE 8080
 
 # Run Program.cs output
 ENTRYPOINT ["dotnet", "CSharpWithDocker.dll"]
