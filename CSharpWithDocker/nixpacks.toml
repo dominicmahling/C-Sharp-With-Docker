@@ -1,17 +1,11 @@
 [phases.setup]
-cmds = [
-  "curl -fsSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh",
-  "chmod +x dotnet-install.sh",
-  "./dotnet-install.sh --channel 10.0 --install-dir $HOME/.dotnet"
-]
+nixPkgs = ["dotnet-sdk_8"]
 
 [phases.build]
 cmds = [
-  "export PATH=$HOME/.dotnet:$PATH",
-  "dotnet --version",
   "dotnet restore",
   "dotnet publish -c Release -o out"
 ]
 
 [start]
-cmd = "export PATH=$HOME/.dotnet:$PATH && dotnet out/YourProjectName.dll"
+cmd = "dotnet out/CSharpWithDocker.dll"
