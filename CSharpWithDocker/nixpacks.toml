@@ -1,5 +1,6 @@
 [phases.setup]
 nixPkgs = ["dotnet-sdk_10"]
+nixpkgsArchive = 'ab8dcb27e7a326d171c6c484de658e3a9d518b43'
 
 [env]
 ASPNETCORE_ENVIRONMENT = "Production"
