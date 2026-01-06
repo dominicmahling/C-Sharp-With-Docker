@@ -5,7 +5,7 @@ nixpkgsArchive = 'ab8dcb27e7a326d171c6c484de658e3a9d518b43'
 [env]
 ASPNETCORE_ENVIRONMENT = "Production"
 ASPNETCORE_URLS = "http://0.0.0.0:8060"
-PORT = "8080"
+PORT = "8060"
 
 [phases.build]
 cmds = [
