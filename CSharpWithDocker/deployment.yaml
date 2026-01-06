@@ -17,4 +17,4 @@ spec:
         image: csharp-web:1.0
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 8081
+        - containerPort: 8080
